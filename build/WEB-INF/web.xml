@@ -1,0 +1,130 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         version="3.0">
+    
+    <!-- Déclaration du servlet -->
+    <servlet>
+        <servlet-name>Departement</servlet-name>
+        <servlet-class>controller.FormDepartementServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Emp</servlet-name>
+        <servlet-class>controller.FormEmpServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Compte</servlet-name>
+        <servlet-class>controller.FormCompteServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Move</servlet-name>
+        <servlet-class>controller.FormMoveServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Prevision</servlet-name>
+        <servlet-class>controller.FormPrevisionServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Depense</servlet-name>
+        <servlet-class>controller.FormDepenseServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>EmpPost</servlet-name>
+        <servlet-class>controller.EmpServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ComptePost</servlet-name>
+        <servlet-class>controller.CompteServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>MovePost</servlet-name>
+        <servlet-class>controller.MoveServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PrevisionPost</servlet-name>
+        <servlet-class>controller.PrevisionServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>DepensePost</servlet-name>
+        <servlet-class>controller.DepenseServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>controller.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Dash</servlet-name>
+        <servlet-class>controller.DashboardServlet</servlet-class>
+    </servlet>
+
+    <!-- Mapping du servlet à une URL -->
+    <servlet-mapping>
+        <servlet-name>Depense</servlet-name>
+        <url-pattern>/FormDep</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Emp</servlet-name>
+        <url-pattern>/FormEmp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Compte</servlet-name>
+        <url-pattern>/FormCompte</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Move</servlet-name>
+        <url-pattern>/FormMove</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Prevision</servlet-name>
+        <url-pattern>/FormPrev</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>EmpPost</servlet-name>
+        <url-pattern>/Emp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ComptePost</servlet-name>
+        <url-pattern>/Compte</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>MovePost</servlet-name>
+        <url-pattern>/Move</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PrevisionPost</servlet-name>
+        <url-pattern>/Prev</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DepensePost</servlet-name>
+        <url-pattern>/Dep</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Dash</servlet-name>
+        <url-pattern>/Dash</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,19 @@
+CREATE TABLE Prevision (
+    id_prevision INT AUTO_INCREMENT PRIMARY KEY,
+    libelle VARCHAR(255) NOT NULL,
+    Montant DECIMAL(10,2) NOT NULL DEFAULT 0.00
+);
+
+CREATE TABLE Depense (
+    id_depense INT AUTO_INCREMENT PRIMARY KEY,
+    id_prevision INT,
+    Montant DECIMAL(10,2) NOT NULL DEFAULT 0.00,
+    date_depense TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_prevision) REFERENCES Prevision(id_prevision) ON DELETE CASCADE
+);
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100) NOT NULL,
+    mdp VARCHAR(255) NOT NULL
+);
